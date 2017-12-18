@@ -16,17 +16,23 @@ export default () => (
       <Link to="/">
         <Logo />
       </Link>
-      <Button
-        iconName="md-arrow-forward"
-        fontWeight="black"
-        bg="mainInvert"
-        color="main"
-        py={1}
-        grow={0.5}
-        float="right"
+      <a
+        href="mailto:hello@wildflame.co"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        Get in touch
-      </Button>
+        <Button
+          iconName="md-arrow-forward"
+          fontWeight="black"
+          bg="mainInvert"
+          color="main"
+          py={1}
+          grow={0.5}
+          float="right"
+        >
+          Get in touch
+        </Button>
+      </a>
     </Flex>
   </Box>
 );

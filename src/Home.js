@@ -274,17 +274,23 @@ class HomeHeader extends Component {
           </Box>
         </Flex>
         <Box>
-          <Button
-            iconName="md-arrow-forward"
-            fontWeight="black"
-            bg="mainInvert"
-            mt={3}
-            color="main"
-            py={1}
-            grow={0.5}
+          <a
+            href="mailto:hello@wildflame.co"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Get in touch
-          </Button>
+            <Button
+              iconName="md-arrow-forward"
+              fontWeight="black"
+              bg="mainInvert"
+              mt={3}
+              color="main"
+              py={1}
+              grow={0.5}
+            >
+              Get in touch
+            </Button>
+          </a>
         </Box>
       </Flex>
       <Fading visible={scrolledPastBigHeader} duration={200}>
