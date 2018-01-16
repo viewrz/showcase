@@ -8,31 +8,31 @@ const BG_PATTERN =
 
 const Bullet = () => (
   <Text fontWeight="normal" mr={2}>
-    -
+    <i className="ion-ios-arrow-round-forward" />
   </Text>
 );
 
 const SolvedIssues = () => (
   <Box boxShadow="regular">
-    <Box centerX mw1000 py={3} px={2} ta="center">
-      <Box fontSize={5} mb={2}>
+    <Box centerX mw1000 py={4} px={2} ta="center">
+      <Box fontSize={5} mb={3}>
         <Text>The issues we </Text>
-        <Text fontWeight="bold" color="main">
+        <Text fontWeight="black" color="main">
           solve
         </Text>
-        <Text> :</Text>
+        <Text>:</Text>
       </Box>
       <Flex wrap columnContainer={2}>
         <Box mb={2} p={2} w={[1, 1 / 2]}>
-          <Box fontSize={4} fontWeight="black">
+          <Box fontSize={5} fontWeight="black">
             Lack of scalability
           </Box>
           <Box mt={2}>
-            #1 problem for brands, Underused channel because of limited reach
+            #1 problem for brands, underused channel because of limited reach
           </Box>
         </Box>
         <Box mb={2} p={2} w={[1, 1 / 2]}>
-          <Box fontSize={4} fontWeight="black">
+          <Box fontSize={5} fontWeight="black">
             Growing fraud
           </Box>
           <Box mt={2}>
@@ -40,13 +40,13 @@ const SolvedIssues = () => (
           </Box>
         </Box>
         <Box mb={2} p={2} w={[1, 1 / 2]}>
-          <Box fontSize={4} fontWeight="black">
+          <Box fontSize={5} fontWeight="black">
             Lack of insight
           </Box>
-          <Box mt={2}>Influence Marketing Unclear KPIs to monitor</Box>
+          <Box mt={2}>Influence Marketing unclear KPIs to monitor</Box>
         </Box>
         <Box mb={2} p={2} w={[1, 1 / 2]}>
-          <Box fontSize={4} fontWeight="black">
+          <Box fontSize={5} fontWeight="black">
             Poor quality of delivery
           </Box>
           <Box mt={2}>
@@ -60,14 +60,18 @@ const SolvedIssues = () => (
 );
 
 const Differences = () => (
-  <Box boxShadow="regular">
-    <Box centerX mw1000 py={3} px={2}>
+  <Box boxShadow="regular" bg="darkenLight">
+    <Box centerX mw1000 py={4} px={2}>
       <Box ta="center">
-        <Box fontSize={5} mb={1} fontWeight="black">
-          Why are we different?
+        <Box fontSize={5} mb={1}>
+          <Text>Why are we </Text>
+          <Text fontWeight="black" color="main">
+            different
+          </Text>
+          <Text>?</Text>
         </Box>
         <Box fontSize={5} mb={2}>
-          We combine :
+          We combine:
         </Box>
       </Box>
       <Flex
@@ -82,7 +86,7 @@ const Differences = () => (
           justify="center"
         >
           <Box>
-            <Box fontSize={4} fontWeight="black">
+            <Box fontSize={5} fontWeight="black">
               Technology
             </Box>
             <Box mt={2}>
@@ -104,7 +108,7 @@ const Differences = () => (
         >
           <Flex inline flexDirection="column" alignItems="flex-start">
             <Box>
-              <Box fontSize={4} fontWeight="black">
+              <Box fontSize={5} fontWeight="black">
                 Standardised processes
               </Box>
               <Box mt={2}>
@@ -126,25 +130,26 @@ const FullService = () => (
     <Flex
       centerX
       mw1000
-      py={3}
+      py={4}
       px={2}
       flexDirection="column"
       alignItems={['center', 'center', 'stretch']}
     >
       <Box fontSize={5} mb={2} ta="center">
         <Text>We provide a </Text>
-        <Text fontWeight="bold" color="main">
-          Full Service
+        <Text fontWeight="black" color="main">
+          full service
         </Text>
         <Text> approach to Influence Marketing</Text>
       </Box>
       <Flex
+        py={2}
         columnContainer={2}
         flexDirection={['column', 'column', 'row']}
         justify="space-between"
       >
-        <Box p={2}>
-          <Box mb={2} fontSize={4} fontWeight="black">
+        <Box flex="auto" flexBasis="0" p={2}>
+          <Box mb={2} fontSize={5} fontWeight="black">
             Industry expertise
           </Box>
           <Box>
@@ -159,8 +164,8 @@ const FullService = () => (
             </Box>
           </Box>
         </Box>
-        <Box p={2}>
-          <Box mb={2} fontSize={4} fontWeight="black">
+        <Box flex="auto" flexBasis="0" p={2}>
+          <Box mb={2} fontSize={5} fontWeight="black">
             Campaign management
           </Box>
           <Box>
@@ -172,8 +177,8 @@ const FullService = () => (
             </Flex>
           </Box>
         </Box>
-        <Box p={2}>
-          <Box mb={2} fontSize={4} fontWeight="black">
+        <Box flex="auto" flexBasis="0" p={2}>
+          <Box mb={2} fontSize={5} fontWeight="black">
             Reporting
           </Box>
           <Box>
@@ -184,9 +189,9 @@ const FullService = () => (
           </Flex>
         </Box>
       </Flex>
-      <Box mt={2} ta="center" fontSize={5}>
-        <Box>Operating on all networks</Box>
-        <Box mt={2}>
+      <Box mt={3} ta="center" fontSize={5}>
+        <Box>Operating on all networks:</Box>
+        <Flex wrap justify="center" mt={2} py={2}>
           <Text mx={2}>
             <i className="ion-logo-instagram" />
           </Text>
@@ -211,7 +216,7 @@ const FullService = () => (
           <Text mx={2}>
             <i className="ion-logo-twitch" />
           </Text>
-        </Box>
+        </Flex>
       </Box>
     </Flex>
   </Box>
@@ -250,8 +255,8 @@ class HomeHeader extends Component {
         <Box py={3} fontSize={6}>
           <Logo />
         </Box>
-        <Box fontSize={3} py={2}>
-          The Solution for <Text fontWeight="bold">Influence Marketing</Text>
+        <Box py={2}>
+          The Solution for <Text fontWeight="black">Influence Marketing</Text>
           <Text> that is :</Text>
         </Box>
         <Flex
@@ -311,7 +316,7 @@ class HomeHeader extends Component {
 }
 
 export default () => (
-  <Box>
+  <Box fontSize={3}>
     <HomeHeader />
     <SolvedIssues />
     <Differences />

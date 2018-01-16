@@ -2,7 +2,8 @@ const colors = {
   red: '#ed0036',
   orange: '#f79646',
   lightGray: '#efefef',
-  darken: 'rgba(0, 0, 0, 0.3)'
+  darken: 'rgba(0, 0, 0, 0.3)',
+  darkenLight: 'rgba(0, 0, 0, 0.03)'
 };
 
 export default {
