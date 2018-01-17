@@ -90,10 +90,10 @@ const Differences = () => (
               Technology
             </Box>
             <Box mt={2}>
-              <Bullet />1. Bring scalability
+              <Bullet />Bring scalability
             </Box>
             <Box mt={2}>
-              <Bullet />2. Prevent fraud
+              <Bullet />Prevent fraud
             </Box>
           </Box>
         </Flex>
@@ -112,10 +112,10 @@ const Differences = () => (
                 Standardised processes
               </Box>
               <Box mt={2}>
-                <Bullet />3. Guarantee quality of delivery
+                <Bullet />Guarantee quality of delivery
               </Box>
               <Box mt={2}>
-                <Bullet />4. Offer clear campaign insights
+                <Bullet />Offer clear campaign insights
               </Box>
             </Box>
           </Flex>
