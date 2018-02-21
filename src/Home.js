@@ -64,7 +64,7 @@ const Differences = () => (
     <Box centerX mw1000 py={4} px={2}>
       <Box ta="center">
         <Box fontSize={5} mb={1}>
-          <Text>Why are we </Text>
+          <Text>How are we </Text>
           <Text fontWeight="black" color="main">
             different
           </Text>
